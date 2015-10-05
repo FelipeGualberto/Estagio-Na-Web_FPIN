@@ -1,4 +1,5 @@
 # Estagio-Na-Web_FPIN
+
 Projeto para a disciplina de FPIN
 
 Como baixar o projeto para o computador?
@@ -18,6 +19,7 @@ comando ls mostrar todos os arquivos e pastas onde você se encontra.
 Antes de tudo configure o git. Na linha de comando escreva 
 
 $ git config --global user.name "Seu nome"
+
 $ git config --global user.email seu email
 
 Como pegar os arquivos desse repositório. Entre numa pasta pelo git bash onde você quer deixar o projeto guardado no seu pc. Digite: git clone https://github.com/FelipeGualberto/Estagio-Na-Web_FPIN.git 
@@ -26,8 +28,11 @@ Pronto o projeto já foi clonado da nuvem para o seu pc.
 
 Depois de fazer todas as modificações no seu projeto e quiser subir para o repositório, faça isso:
 git pull (NUNCA ESQUEÇA DE FAZER ISSO PRIMEIRO ANTES DE TUDO). O git pull serve para atualizar o seu repositório local caso alguém da equipe tenha atualizado antes de você. Muito importante fazer isso sempre ANTES DE MEXER NO PROJETO e DEPOIS DE MEXER NELE quando você quer mandar para a nuvem.
+
 git add . (isso significa que você quer que tudo que tá na pasta seja adicionado no commit).
+
 git commit -m "comentário.." (deixe um comentário do que vc fez nesse commit) façam comentários que expliquem de maneira sucinta o que você fez, por exemplo: "Adicionei o css na página principal"
+
 git push (Subir os arquivos).
 
 
