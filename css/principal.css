@@ -207,3 +207,10 @@ div.inner {
 	width: 100px;
 	height: 100px;
 }
+.card-type input, .card-type label {
+	display:inline;
+
+}
+
+
+
