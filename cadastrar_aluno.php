@@ -17,41 +17,11 @@
 </div>
 <div id='cssmenu'>
 <ul>
-   <li><a href='index.html'><span>Início</span></a></li>
-   <li class='active has-sub'><a href='#'><span>Usuários</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Coordenação do Estágio</span></a>
-            <ul>
-               <li><a href='empresas_cadastradas.html'><span>Empresas Cadastradas</span></a></li>
-               <li class='last'><a href='#'><span>Estágios Disponíveis</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>Empresas</span></a>
-            <ul>
-               <li><a href='cadastrar_empresa.html'><span>Cadastrar Empresa</span></a></li>
-               <li class='last'><a href='cadastrar_estagio.html'><span>Cadastrar Oferta de Estágio</span></a></li>
-            </ul>
-         </li>         
-         <li class='has-sub'><a href='#'><span>Professor Orientador</span></a>
-            <ul>
-               <li><a href='#'><span>Avaliar relatório de estágio parcial e final</span></a></li>
-            </ul>
-         </li>
-            <li class='has-sub'><a href='#'><span>Aluno</span></a>
-            <ul>
-               <li><a href='#'><span>Entregar relatório de estágio parcial e final</span></a></li>
-               <li class='last'><a href='#'><span>avaliações de relatório</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>Usuários Anônimo</span></a>
-            <ul>
-               <li class='last'><a href='vagas_disponiveis.html'><span>Vagas de Estágios</span></a></li>
-            </ul>
-         </li>
-      </ul>
-   </li>
-   <li class='last'><a href='about.html'><span>Sobre</span></a></li>
-   <li class='last'><a href='contato.html'><span>Contato</span></a></li>
+   <li><a href='index.php'><span>Início</span></a></li>
+   <li><a href='#'><span>Cadastrar Login</span></a></li>
+   <li><a href='login.php'><span>Login</span></a></li>
+   <li class='last'><a href='about.php'><span>Sobre</span></a></li>
+   <li class='last'><a href='contato.php'><span>Contato</span></a></li>
 </ul>
 </div>
 <div id="container-wrap" class="wrap">
@@ -65,7 +35,7 @@
             <div id="content-wrap">
             	<div id="content" class="clearfix">
                 	<h3 class="yellow f14">CADASTRAR ESTÁGIARIO</h3>
-                    <form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false;">
+                    <form id="cadastro" name="cadastro" method="post" action="inseriraluno.php" onsubmit="return validaCampo(); return false;">
   <table width="550" border="0">
     <tr>
       <td width="69" class="yellow f14" >Nome:</td>
@@ -73,15 +43,10 @@
         <span>*</span></td>
     </tr>
     <tr>
-      <td class="yellow f14">Email:</td>
-      <td><input name="email" type="text" id="email" size="50" maxlength="60" />
-      <span class="style1">*</span></td>
-    </tr>
-    <tr>
       <td class="yellow f14">Sexo:</td>
-      <td class="yellow f14"><input name="sexo" type="radio" value="Masculino" checked="checked" />
+      <td class="yellow f14"><input name="sexo" type="radio" value="M" checked="checked" />
         Masculino
-        <input name="sexo" type="radio" value="Feminino" />
+        <input name="sexo" type="radio" value="F" />
         Feminino <span class="style1">*</span> </td>
     </tr>
     <tr>
@@ -91,9 +56,32 @@
         <input name="telefone" type="text" id="telefone" />
         <span class="style3">Apenas números</span> </td>
     </tr>
+     <tr>
+      <td class="yellow f14">CPF:</td>
+      <td><input name="cpf" type="text" id="cpf" maxlength="20" />
+        <span class="style1">*</span></td>
+    </tr>
+    <td class="yellow f14">
+    <label >Nascimento: </label>
+   </td>
+   <td align="left">
+
+   <input type="text" name="data" size="10" maxlength="10">
+    <span class="style1">*</span></td>
+   </td>
     <tr>
       <td class="yellow f14">Endereço:</td>
       <td><input name="endereco" type="text" id="endereco" size="50" maxlength="70" />
+        <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td class="yellow f14">Numero:</td>
+      <td><input name="numero" type="text" id="numero" size="10" maxlength="70" />
+        <span class="style1">*</span></td>
+    </tr>
+    <tr>
+      <td class="yellow f14">CEP:</td>
+      <td><input name="cep" type="text" id="cep" size="10" maxlength="70" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
@@ -138,21 +126,6 @@
       <td class="yellow f14">Bairro:</td>
       <td><input name="bairro" type="text" id="bairro" maxlength="20" />
         <span class="style1">*</span></td>
-    </tr>
-    <tr>
-      <td class="yellow f14">País:</td>
-      <td><input name="pais" type="text" id="pais" maxlength="20" />
-        <span class="style1">*</span></td>
-    </tr>
-    <tr>
-      <td class="yellow f14">Login:</td>
-      <td><input name="login" type="text" id="login" maxlength="12" />
-        <span class="style1">*</span></td>
-    </tr>
-    <tr>
-      <td class="yellow f14">Senha:</td>
-      <td><input name="senha" type="password" id="senha" maxlength="12" />
-          <span class="style1">*</span></td>
     </tr>
     <tr>
       <td class="yellow f14" colspan="2"><input name="news" type="checkbox" id="news" value="ATIVO" checked="checked" />

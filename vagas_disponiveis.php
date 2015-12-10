@@ -17,41 +17,11 @@
 </div>
 <div id='cssmenu'>
 <ul>
-   <li><a href='index.html'><span>Início</span></a></li>
-   <li class='active has-sub'><a href='#'><span>Usuários</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Coordenação do Estágio</span></a>
-            <ul>
-               <li><a href='empresas_cadastradas.html'><span>Empresas Cadastradas</span></a></li>
-               <li class='last'><a href='#'><span>Estágios Disponíveis</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>Empresas</span></a>
-            <ul>
-               <li><a href='cadastrar_empresa.html'><span>Cadastrar Empresa</span></a></li>
-               <li class='last'><a href='cadastrar_estagio.html'><span>Cadastrar Oferta de Estágio</span></a></li>
-            </ul>
-         </li>         
-         <li class='has-sub'><a href='#'><span>Professor Orientador</span></a>
-            <ul>
-               <li><a href='#'><span>Avaliar relatório de estágio parcial e final</span></a></li>
-            </ul>
-         </li>
-            <li class='has-sub'><a href='#'><span>Aluno</span></a>
-            <ul>
-               <li><a href='#'><span>Entregar relatório de estágio parcial e final</span></a></li>
-               <li class='last'><a href='#'><span>avaliações de relatório</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>Usuários Anônimo</span></a>
-            <ul>
-               <li class='last'><a href='vagas_disponiveis.html'><span>Vagas de Estágios</span></a></li>
-            </ul>
-         </li>
-      </ul>
-   </li>
-   <li class='last'><a href='about.html'><span>Sobre</span></a></li>
-   <li class='last'><a href='contato.html'><span>Contato</span></a></li>
+   <li><a href='index.php'><span>Início</span></a></li>
+   <li><a href='#'><span>Cadastrar Login</span></a></li>
+   <li><a href='login.php'><span>Login</span></a></li>
+   <li class='last'><a href='about.php'><span>Sobre</span></a></li>
+   <li class='last'><a href='contato.php'><span>Contato</span></a></li>
 </ul>
 </div>
 <div id="container-wrap" class="wrap">

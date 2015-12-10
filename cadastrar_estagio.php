@@ -12,46 +12,13 @@
 
 <div id="header-wrap" class="wrap">
   <div id="header" class="pagesize">
-        <h1 id="logo">ESTAGIÁRIOS DA DEPRESSÃO</h1>
+        <h1 id="logo">ESTAGIÁRIOS DA DEPRESSÃO  <?php session_start(); if (isset($_SESSION["tipo_login"])){echo  $_SESSION["nome_login"];} ?> </h1>
     </div>
 </div>
 <div id='cssmenu'>
 <ul>
-   <li><a href='index.html'><span>Início</span></a></li>
-   <li class='active has-sub'><a href='#'><span>Usuários</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>Coordenação do Estágio</span></a>
-            <ul>
-               <li><a href='empresas_cadastradas.html'><span>Empresas Cadastradas</span></a></li>
-               <li class='last'><a href='#'><span>Estágios Disponíveis</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>Empresas</span></a>
-            <ul>
-               <li><a href='cadastrar_empresa.html'><span>Cadastrar Empresa</span></a></li>
-               <li class='last'><a href='cadastrar_estagio.html'><span>Cadastrar Oferta de Estágio</span></a></li>
-            </ul>
-         </li>         
-         <li class='has-sub'><a href='#'><span>Professor Orientador</span></a>
-            <ul>
-               <li><a href='#'><span>Avaliar relatório de estágio parcial e final</span></a></li>
-            </ul>
-         </li>
-            <li class='has-sub'><a href='#'><span>Aluno</span></a>
-            <ul>
-               <li><a href='#'><span>Entregar relatório de estágio parcial e final</span></a></li>
-               <li class='last'><a href='#'><span>avaliações de relatório</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>Usuários Anônimo</span></a>
-            <ul>
-               <li class='last'><a href='vagas_disponiveis.html'><span>Vagas de Estágios</span></a></li>
-            </ul>
-         </li>
-      </ul>
-   </li>
-   <li class='last'><a href='about.html'><span>Sobre</span></a></li>
-   <li class='last'><a href='contato.html'><span>Contato</span></a></li>
+   <li><a href='menu_empresa.php'><span>Início</span></a></li>
+
 </ul>
 </div>
 <div id="container-wrap" class="wrap">
@@ -65,41 +32,36 @@
             <div id="content-wrap">
               <div id="content" class="clearfix">
                   <h3 class="yellow f14">CADASTRAR ESTÁGIO</h3>
-                    <form id="cadastro" name="cadastro" method="post" action="cadastro.php" onsubmit="return validaCampo(); return false;">
+                    <form id="cadastro" name="cadastro" method="post" action="inserirestagio.php" onsubmit="return validaCampo(); return false;">
   <table width="550" border="0">
     <tr>
-      <td width="69" class="yellow f14" >Nome:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="50" maxlength="60" />
-      <span>*</span></td>
-    </tr>
-    <tr>
     <td width="69" class="yellow f14" >Início:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="50" maxlength="60" />
+      <td width="546"><input name="inicio" type="text" id="inicio" size="50" maxlength="60" />
       <span>*</span></td>
     </tr>
     <tr>
       <td width="69" class="yellow f14" >Encerramento:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="50" maxlength="60" />
+      <td width="546"><input name="encerramento" type="text" id="encerramento" size="50" maxlength="60" />
         <span>*</span></td>
     </tr>
       <tr>
-      <td width="69" class="yellow f14" >Aluno:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="50" maxlength="60" />
+      <td width="69" class="yellow f14" >Vagas:</td>
+      <td width="546"><input name="vagas" type="text" id="vagas" size="50" maxlength="60" />
         <span>*</span></td>
     </tr>
-      <tr>
-      <td width="69" class="yellow f14" >Empresa:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="50" maxlength="60" />
+        <tr>
+      <td width="69" class="yellow f14" >Salario:</td>
+      <td width="546"><input name="salario" type="text" id="salario" size="50" maxlength="60" />
         <span>*</span></td>
     </tr>
       <tr>
       <td width="69" class="yellow f14" >Orientador:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="50" maxlength="60" />
+      <td width="546"><input name="orientador" type="text" id="orientandor" size="50" maxlength="60" />
         <span>*</span></td>
     </tr>
     <tr>
       <td width="69" class="yellow f14" >Supervisor:</td>
-      <td width="546"><input name="nome" type="text" id="nome" size="50" maxlength="60" />
+      <td width="546"><input name="supervisor" type="text" id="supervisor" size="50" maxlength="60" />
         <span>*</span></td>
     </tr>
     <tr>
@@ -112,7 +74,7 @@
     </tr>
 
       <td class="yellow f14">Atuação:</td>
-      <td><input name="pais" type="text" id="pais" maxlength="20" />
+      <td><input name="atuacao" type="text" id="atuacao" maxlength="20" />
         <span class="style1">*</span></td>
     </tr>
     <tr>
