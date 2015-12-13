@@ -28,6 +28,7 @@
       $i++;
       $_SESSION["tipo_login"] = $dados["TIPO_LOGIN"];
       $_SESSION["nome_login"] = $dados["LOGIN"];
+      $_SESSION["id_login"] = $dados["ID_LOGIN"];
 
     }
 
@@ -53,31 +54,6 @@
     }
     
 
-    // Validação do usuário/senha digitados
-    //$sql = SELECT 'COD_LOGIN', 'TIPO_LOGIN' FROM 'EW_LOGIN' WHERE ('LOGIN' = '".$login ."') AND ('SENHA' = '". sha1($senha) ."');
-    //$sql = "SELECT * FROM 'EW_LOGIN' WHERE (LOGIN = '$login') AND (SENHA = '$senha')"; 
-   /* $query = mysql_query(SELECT * FROM 'EW_LOGIN' WHERE 'LOGIN' = '$login' AND 'SENHA' = '$senha');
-    if (mysql_num_rows($query) != 1) {
-        // Mensagem de erro quando os dados são inválidos e/ou o usuário não foi encontrado
-        echo "Login inválido!"; exit;
-
-    } else {
-        // Salva os dados encontados na variável $resultado
-        $resultado = mysql_fetch_assoc($query);
-
-        // Se a sessão não existir, inicia uma
-        if (!isset($_SESSION)) session_start();
-      
-        // Salva os dados encontrados na sessão
-        $_SESSION['UsuarioID'] = $resultado['COD_LOGIN'];
-        $_SESSION['UsuarioNivel'] = $resultado['TIPO_LOGIN'];
-      
-        // Redireciona o visitante
-        header("Location: restrito.php"); exit;
-
-
-    }
-      */
     ?>
 
 

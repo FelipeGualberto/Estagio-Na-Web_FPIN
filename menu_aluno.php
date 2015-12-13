@@ -36,18 +36,15 @@
             </div>
             <div id="content-wrap">
             	<div id="content" class="clearfix">
-                	<h3 class="yellow f14">BEM VINDO</h3>
-                		<p>
-                    	A Estagiários da epressão é especialista no recrutamento, seleção e administração de estagiários. Atuamos com administração de contratos de estágio para pessoas em busca de experiência e que visam desenvolver seus talentos.</p>
-                        <p class="yellow"><strong>Com capacidade de atingir mais de 500 mil estudantes em todo o território de alagoas, conseguimos garantir um retorno quantitativo e qualitativo para suas vagas de estágio. Possuímos parceria com mais de 10 instituições de ensino públicas e privadas de Alagoas.</strong>
-						</p>
-                        <p>O processo de recrutamento e seleção de estagiários pela Estagiários da Depressão é desenvolvido em parceria com sua Organização. Realizamos a pré-seleção dos estudantes com a verificação dos currículos de acordo com os pré-requisitos da empresa. Cuidamos da gestão dos estagiários da sua empresa, garantindo todas as exigências legais, para que sua empresa tenha mais tempo para atividades estratégicas. É muito simples contratar um estagiário, confira abaixo o que a Companhia de Estágios pode fazer por você.
-					</p>
-                    <img src="images/img.gif" alt="" class="left" />
-                    <p>
-                    	Relatório de Estágio: disponibilizamos e acompanhamos o preenchimento do Relatório de Atividades de Estágio (obrigatório, conforme art. 9º da Lei nº 11.788/2008) pelo estagiário e pelo seu supervisor
-                    </p>
+      <div>
+                              <a href="relatorio.php">Entregar Relatório parcial e Final</a>
+      </div>
+
+      <div>
+                              <a href="avaliacoes_relatorio.php">Acompanhar avaliações de relatório</a>
+      </div>
                 </div>
+
             </div>
             <div id="footer">
             
