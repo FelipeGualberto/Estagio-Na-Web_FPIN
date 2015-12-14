@@ -8,7 +8,7 @@
 
 
     // Tenta se conectar ao servidor MySQL
-   $mysqli = new mysqli('localhost', 'root', '', 'estagioweb2');
+   $mysqli = new mysqli('sql3.freemysqlhosting.net:3306', 'sql399794', 'N6sWiwQRsG', 'sql399794');
    
     // Tenta se conectar a um banco de dados MySQL
     if (mysqli_connect_errno()) trigger_error(mysqli_connect_error());
@@ -19,7 +19,7 @@
     //echo $login;
     //echo $senha;
 
-    $sql = "SELECT * FROM EW_LOGIN WHERE EW_LOGIN.LOGIN = '$login' AND EW_LOGIN.SENHA = '$senha' ";
+    $sql = "SELECT * FROM ew_login WHERE ew_login.LOGIN = '$login' AND ew_login.SENHA = '$senha' ";
    // echo $sql;
     $query = $mysqli->query($sql);
     $i = 0;

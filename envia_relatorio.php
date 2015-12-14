@@ -23,11 +23,11 @@
     //echo $senha;
 
     $sql = "INSERT INTO Relatorios (ID_ALUNO, TEXTO, ID_ORIENTADOR, Data_Hora, TIPO_RELATORIO) VALUES ('$aluno','$relatorio_texto','$orientador','$date','$tipo_relatorio') ";
-    echo $sql;
+    //echo $sql;
    // echo $sql;
     $query = $mysqli->query($sql);
 
-
+    echo "Relatório Enviado";
    // header("Location: relatorio_parcial.php")
 
     ?>
